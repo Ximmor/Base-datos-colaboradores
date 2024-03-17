@@ -20,9 +20,9 @@ function App() {
     setAlert(newAlert);
   };
 
-  return (
+  return ( 
     <>
-      <h1 className="my-4"><i className="fa-solid fa-user-group"></i> Lista de Colaboradores</h1>
+    <h1 className="text-primary my-4"><i className ="fa-solid fa-user-group"></i> Lista de Colaboradores</h1>
       <Buscador 
         data={baseColaboradores}
         dataFilter={setBaseColaboradoresFiltrado}
@@ -35,7 +35,7 @@ function App() {
           setDataFilter={setBaseColaboradoresFiltrado}
         />
         <Formulario
-          className="formulario"
+          className ="formulario text-primary"
           addAlert={addAlert}
           data={baseColaboradores}
           setData={setBaseColaboradores}

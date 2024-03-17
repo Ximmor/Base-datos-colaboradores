@@ -91,11 +91,11 @@ export default function Formulario({ addAlert, setData, data, setDataFilter }) {
   }, [data]);
 
   return (
-    <div className="formulario col-12 col-lg-4">
-      <h3>Agregar Colaborador</h3>
+    <div className="formulario  col-12 col-lg-4">
+      <h3 className="text-primary">Agregar Colaborador</h3>
 
       <form noValidate onSubmit={(e) => validandoDatos(e)}>
-        <div className="mb-3">
+        <div className="text-primary mb-3">
           <input
             onChange={(e) => handlerInputs(e)}
             value={datosColaborador.nombre}
@@ -151,7 +151,7 @@ export default function Formulario({ addAlert, setData, data, setDataFilter }) {
         </div>
 
         <div className="d-grid mb-3">
-          <button type="submit" className="btn">
+          <button type="submit" className="btn btn-warning">
             Agregar Colaborador
           </button>
         </div>
